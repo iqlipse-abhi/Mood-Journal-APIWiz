@@ -44,7 +44,7 @@ async function postData(endpoint, payload) {
 
 const fetchWeather = async (city) => {
   try {
-    const response = await fetch(`http://localhost:3000/weather?city=${city}`);
+    const response = await fetch(`https://mood-journal-apiwiz-3.onrender.com/weather?city=${city}`);
     const data = await response.json();
     return data;
   } catch (error) {
