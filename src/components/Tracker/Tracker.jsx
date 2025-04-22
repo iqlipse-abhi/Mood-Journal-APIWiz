@@ -116,6 +116,7 @@ const Tracker = () => {
           label="Enter City"
           variant="outlined"
           size="small"
+          sx={{backgroundColor: "white", borderRadius: "15px"}}
           value={cityInput}
           onChange={(e) => setCityInput(e.target.value)}
         />
