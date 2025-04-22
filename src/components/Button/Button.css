@@ -1,0 +1,29 @@
+#ButtonContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  background-color: white !important;
+  color: black !important;
+  cursor: pointer;
+  margin: 0 0.5rem;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#ButtonContainer:hover {
+  transform: scale(1.2);
+}
+
+#ButtonContainer.clicked {
+  background-color: #e74c3c;
+}
+
+@media screen and (max-width: 768px) {
+  #ButtonContainer {
+    width: 1.5rem;
+    height: 1.5rem;
+    font-size: 2rem;
+  }
+}
